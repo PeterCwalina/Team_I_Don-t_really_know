@@ -15,6 +15,6 @@ The task is being performed on matricies of 1000 x 1000 upwards to make sure the
 ## Results
 
 ## Conclusions
-
+The speed up of the algorithm as trials go on is strange but can most likely be attributed to memory allocation.
 
  
