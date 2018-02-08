@@ -13,8 +13,9 @@ Our method is to take a timestamp before the matrix search is done and after to 
 The task is being performed on matricies of 1000 x 1000 upwards to make sure the data is meaningful
 
 ## Results
+The time taken seems to increase in a linear fashion with the exception of 16k x 16k matrix.  
 
 ## Conclusions
-The speed up of the algorithm as trials go on is strange but can most likely be attributed to memory allocation.
-
+The algorithm works in a linear time with the exception of the 16k by 16k matrix only because of the initial slowdown 
+Without taking the average of the the times of the trials we noticed that the times for a single matrix-size would speed up, but when averaged and graphed the times do in fact look like a linear graph. The initial slowdown can be attributed to memory allocation most likely.
  
