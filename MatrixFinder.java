@@ -59,10 +59,10 @@ public class MatrixFinder{
     double timeEnd;
     //worst case scenario testing
     
-
-    for (int y = 17000; y > 0;y-=1000){ //16000 was observed to be max size runnable
+    //runs some extra cases as a warmup
+    for (int y = 30000; y > 0;y-=1000){ //16000 was observed to be max size runnable
         int[][] testmatrix1;
-        if (y==17000){
+        if (y >= 17000){
             testmatrix1 = new int[16000][16000];
         }
         else{
@@ -77,7 +77,7 @@ public class MatrixFinder{
             double timeDif =(timeEnd - timeStart);
             sum+= timeDif;
         }
-        if (y!=17000){
+        if (!(y>=17000)){
             System.out.println(y+","+(sum/50));
         }
     }
