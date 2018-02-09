@@ -18,5 +18,7 @@ The time taken seems to increase in a linear fashion.
 ## Conclusions
 The algorithm works in a linear time, but while testing we noticed that the jvm needs a little time to "warmup" during that time it runs slower than its supposed to.  Therfore we gave it a warmup period before actually recording data.
 We had to have a few throw away cases in order to discount the initial large numbers that we were seeing.
-We also ran each matrix size 50 times to ensure that our average was as accurate as possible.  Graph is visible below, with red representing the optimized line.
-![graph][chart.png]
+We also ran each matrix size 50 times to ensure that our average was as accurate as possible.  Graph is visible below, with red representing the line of best fit.
+
+![Graph!](https://github.com/PeterCwalina/Team_I_Don-t_really_know/blob/master/chart.png "Our Graph")
+
